@@ -25,7 +25,7 @@ public class BeeHive {
         double nectarFromAllTheBees = bees.stream().mapToDouble(Bee::giveNectar).sum();
         honey += createHoney(nectarFromAllTheBees);
         double honeyForQueen = 2;
-        honey = honey - honeyForQueen;
+        honey -= honeyForQueen;
         beeQueen.eatNectar(honeyForQueen);
     }
 
